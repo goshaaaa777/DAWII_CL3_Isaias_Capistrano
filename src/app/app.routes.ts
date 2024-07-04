@@ -7,7 +7,7 @@ export const routes: Routes = [
         path:"pregUno",component:Pregunta1Component
     },
     {
-        path:"preguDos",component:Pregunta2Component
+        path:"pregDos",component:Pregunta2Component
 
     }
 ];

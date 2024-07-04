@@ -8,7 +8,7 @@ import { map, Observable } from 'rxjs';
 export class Pregunta1Service {
 
   apiRick:string = "https://rickandmortyapi.com/api/episode"
-  apiFoto:string = "https://jsonplaceholder.typicode.com/photos"
+
   constructor(private httpCliente: HttpClient) {
 
    }
@@ -18,8 +18,5 @@ export class Pregunta1Service {
       map(response => response.results.filter((location: any) => location.id % 2 == 1)));
    }
 
-   getAllApiFoto():Observable<any>{
-    return this.httpCliente.get<any>(this.apiFoto).pipe(
-      map(response => response.results.filter((location: any) => location.id % 2 == 1)));
-   }
+ 
 }
